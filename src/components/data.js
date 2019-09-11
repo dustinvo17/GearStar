@@ -512,6 +512,7 @@ export const moniter = [
      id: 1,
     title: "Viewsonic VA2261H-8 Full HD",
     img: [moniterUrl(1,1,'jpg'),moniterUrl(1,2,'jpg')],
+    video:"https://www.youtube.com/watch?v=O3hfgcs5Po8&t=161s",
     price: 95.99,
     company:"Viewsonic",
     inCart: false,
@@ -568,4 +569,291 @@ export const moniter = [
     count: 0,
     total: 0
   },
+    {
+     id: 7,
+    title: "LG 27MP59G-P",
+    img: [moniterUrl(7,1,'jpg'),moniterUrl(7,2,'jpg'),moniterUrl(7,3,'jpg'),moniterUrl(7,4,'jpg')],
+    price: 210.99,
+    company:"LG",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+    {
+     id: 8,
+    title: "Viewsonic VX2776-SMHD",
+    img: [moniterUrl(8,1,'jpg'),moniterUrl(8,2,'jpg'),moniterUrl(8,3,'jpg'),moniterUrl(8,4,'jpg'),moniterUrl(8,5,'jpg'),moniterUrl(8,6,'jpg')],
+    price: 210.99,
+    company:"Viewsonic",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+   {
+     id: 9,
+    title: "ACER VG270 27",
+    img: [moniterUrl(9,1,'jpg'),moniterUrl(9,2,'png'),moniterUrl(9,3,'jpg'),moniterUrl(9,4,'png'),moniterUrl(9,5,'jpg')],
+    price: 225.99,
+    company:"Acer",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+    {
+     id: 10,
+    title: "HKC M24G1 - 144Hz",
+    img: [moniterUrl(10,1,'jpg'),moniterUrl(10,2,'png'),moniterUrl(10,3,'jpg'),moniterUrl(10,4,'png'),moniterUrl(10,5,'png')],
+    price: 225.99,
+    company:"HKC",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+    {
+     id: 11,
+    title: "Viewsonic VX2458-C-MHD - 144Hz",
+    img: [moniterUrl(11,1,'jpg')],
+    price: 225.99,
+    company:"Viewsonic",
+    inCart: false,
+    count: 0,
+    total: 0
+  }
+  ,
+  {
+     id: 12,
+    title: "HKC M27G1Q - 2K 144Hz",
+    img: [moniterUrl(12,1,'jpg')],
+    price: 370.99,
+    company:"HKC",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+     id: 13,
+    title: "HKC M32A7Q - 144Hz-2K",
+    img: [moniterUrl(13,1,'jpg')],
+    price: 372.99,
+    company:"HKC",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+     id: 14,
+    title: "HP 27X 3WL53AA 144Hz-1ms 2k",
+    img: [moniterUrl(14,1,'jpg'),moniterUrl(14,2,'png'),moniterUrl(14,3,'png')],
+    price: 380.99,
+    company:"HP",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  
+  
+]
+export const mouse = [
+  {
+     id: 1,
+    title: "Rapoo V280 RGBn",
+    img: [mouseUrl(20,1,'png'),mouseUrl(20,2,'png')],
+    company:"Rapoo",
+    price:30.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+   {
+     id: 2,
+    title: "Asus Cerberus",
+    img: [mouseUrl(21,1,'png'),mouseUrl(21,2,'png'),mouseUrl(21,3,'png')],
+    company:"Asus",
+       price:30.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+    {
+     id: 3,
+    title: "Fuhlen G90 White",
+    img: [mouseUrl(22,1,'jpg')],
+    company:"Fuhlen",
+       price:30.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+    {
+     id: 4,
+    title: "Fuhlen G90 Pro",
+    img: [mouseUrl(23,1,'png'),mouseUrl(23,2,'jpg'),mouseUrl(23,3,'png')],
+    company:"Fuhlen",
+       price:30.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+     {
+     id: 5,
+    title: "Lenovo Legion M200 RGB",
+    img: [mouseUrl(24,1,'jpg'),mouseUrl(24,2,'jpg'),mouseUrl(24,3,'jpg'),mouseUrl(24,4,'jpg'),mouseUrl(24,5,'jpg')],
+    company:"Lenovo",
+       price:30.99,
+    inCart: false,
+
+    count: 0,
+    total: 0
+  },
+     {
+     id: 6,
+    title: "Cougar Minos X3 White",
+    img: [mouseUrl(25,1,'jpg'),mouseUrl(25,2,'png'),mouseUrl(25,3,'png'),mouseUrl(25,4,'png'),mouseUrl(25,5,'png')],
+    company:"Cougar",
+       price:30.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+     {
+     id: 7,
+    title: "Steelseries Sensei RAW Ruberized",
+    img: [mouseUrl(26,1,'jpg'),mouseUrl(26,2,'jpg'),mouseUrl(26,3,'jpg'),mouseUrl(26,4,'jpg'),mouseUrl(26,5,'jpg')],
+    company:"Steelseries",
+    price:30.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+     {
+     id: 8,
+    title: "Razer Deathadder Essential",
+    img: [mouseUrl(27,1,'jpg'),mouseUrl(27,2,'png'),mouseUrl(27,3,'png'),mouseUrl(27,4,'png')],
+    company:"Razer",
+    price:30.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+   {
+     id: 9,
+    title: "Razer Abyssus Essential",
+    img: [mouseUrl(28,1,'jpg'),mouseUrl(28,2,'jpg'),mouseUrl(28,3,'jpg'),mouseUrl(28,4,'jpg')],
+    company:"Razer",
+    price:42.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+    {
+     id: 10,
+    title: "ASUS Espada GT200 Gaming Mouse",
+    img: [mouseUrl(29,1,'png'),mouseUrl(29,2,'png'),mouseUrl(29,3,'png'),mouseUrl(29,4,'png')],
+    company:"Asus",
+    price:42.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+    {
+     id: 11,
+    title: "Razer Abyssus 2000 DPI",
+    img: [mouseUrl(30,1,'jpg'),mouseUrl(30,2,'jpg')],
+    company:"Razer",
+    price:42.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+    {
+     id: 12,
+    title: "Steelseries Rival 110 Arctis White",
+    img: [mouseUrl(31,1,'jpg'),mouseUrl(31,2,'png'),mouseUrl(31,3,'png'),mouseUrl(31,4,'png'),mouseUrl(31,5,'png')],
+    company:"Steelseries",
+    price:42.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+    {
+     id: 13,
+    title: "Steelseries Rival 110",
+    img: [mouseUrl(32,1,'jpg'),mouseUrl(32,2,'png'),mouseUrl(32,3,'png'),mouseUrl(32,4,'png')],
+    company:"Steelseries",
+    price:42.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+      {
+     id: 14,
+    title: "Rapoo Multi-mode Wireless MT750",
+    img: [mouseUrl(34,1,'png'),mouseUrl(34,2,'png'),mouseUrl(34,3,'png')],
+    company:"Rapoo",
+    price:42.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+      {
+     id: 15,
+    title: "Corsair M55 RGB Pro",
+    img: [mouseUrl(35,1,'png'),mouseUrl(35,2,'png'),mouseUrl(35,3,'png'),mouseUrl(35,4,'png'),mouseUrl(35,5,'png'),mouseUrl(35,6,'png')],
+    company:"Corsair",
+    price:42.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+       {
+     id: 16,
+    title: "Corsair Harpoon RGB Wireless",
+    img: [mouseUrl(36,1,'jpg'),mouseUrl(36,2,'png'),mouseUrl(36,3,'png'),mouseUrl(36,4,'png')],
+    company:"Corsair",
+    price:51.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+    {
+     id: 17,
+    title: "Razer DeathAdder Elite",
+    img: [mouseUrl(37,1,'png'),mouseUrl(37,2,'png'),mouseUrl(37,3,'png'),mouseUrl(37,4,'png'),mouseUrl(37,5,'png')],
+    company:"Razer",
+    price:51.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+      {
+     id: 18,
+    title: "Razer Basilisk Essential",
+    img: [mouseUrl(38,1,'png'),mouseUrl(38,2,'png'),mouseUrl(38,3,'png'),mouseUrl(38,4,'png'),mouseUrl(38,5,'png')],
+    company:"Razer",
+    price:55.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },    {
+     id: 19,
+    title: "Steelseries Rival 310",
+    img: [mouseUrl(39,1,'png'),mouseUrl(39,2,'png'),mouseUrl(39,3,'png'),mouseUrl(39,4,'png'),mouseUrl(39,5,'png'),mouseUrl(39,6,'png')],
+    company:"Steelseries",
+    price:55.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+     {
+     id: 20,
+    title: "HyperX Pulsefire FPS Pro",
+    img: [mouseUrl(40,1,'png'),mouseUrl(40,2,'jpg'),mouseUrl(40,3,'jpg'),mouseUrl(40,4,'jpg'),mouseUrl(40,5,'jpg'),mouseUrl(40,6,'jpg'),mouseUrl(40,7,'jpg')],
+    company:"Kingston",
+    price:58.99,
+    inCart: false,
+    count: 0,
+    total: 0
+  }
+  
+  
 ]
