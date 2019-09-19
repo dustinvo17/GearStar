@@ -38,7 +38,7 @@ export const headphone = [
    {
       id: 3,
     title: "ROG Strix Fusion 500",
-    img: [headphoneUrl(3,1,'jpg'),headphoneUrl(3,2,'jpg'),headphoneUrl(3,3,'jpg'),headphoneUrl(3,4,'jpg')],
+    img: [headphoneUrl(3,1,'jpg'),headphoneUrl(3,3,'jpg'),headphoneUrl(3,4,'jpg')],
     price: 159.99,
     company: "Asus",
     info:
@@ -320,7 +320,7 @@ export const keyboard = [
     {
      id: 16,
     title: "Logitech G613",
-    img: [keyboardUrl(16,1,'jpg'),keyboardUrl(16,2,'jpg'),keyboardUrl(16,3,'jpg'),keyboardUrl(16,4,'jpg'),,keyboardUrl(16,5,'jpg')],
+    img: [keyboardUrl(16,1,'jpg'),keyboardUrl(16,2,'jpg'),keyboardUrl(16,3,'jpg'),keyboardUrl(16,4,'jpg'),keyboardUrl(16,5,'jpg')],
     price: 73.99,
     company:"Logitech",
     info:"https://www.tomsguide.com/us/logitech-g613-gaming-keyboard,review-4648.html",
@@ -408,7 +408,7 @@ export const keyboard = [
         {
      id: 23,
     title: "Logitech G512 RGB",
-    img: [keyboardUrl(23,1,'jpg'),keyboardUrl(23,2,'png'),keyboardUrl(23,3,'png'),keyboardUrl(23,4,'png'),keyboardUrl(23,5,'png'),keyboardUrl(23,6,'png'),,keyboardUrl(23,7,'png')],
+    img: [keyboardUrl(23,1,'jpg'),keyboardUrl(23,2,'png'),keyboardUrl(23,3,'png'),keyboardUrl(23,4,'png'),keyboardUrl(23,5,'png'),keyboardUrl(23,6,'png'),keyboardUrl(23,7,'png')],
     price: 99.99,
     company:"Logitech",
     video:"https://www.youtube.com/watch?v=xSAbGup5HVA",
@@ -493,7 +493,7 @@ export const keyboard = [
      {
      id: 30,
     title: "Vortex Cypher",
-    img: [keyboardUrl(29,1,'jpg'),keyboardUrl(29,2,'png'),keyboardUrl(29,3,'png'),keyboardUrl(29,4,'png'),keyboardUrl(29,5,'png')],
+    img: [keyboardUrl(30,1,'png'),keyboardUrl(30,2,'jpg'),keyboardUrl(30,3,'jpg')],
     price: 99.99,
     company:"Vortex",
     switch:"Cherry MX White/Red/Brown",
@@ -507,7 +507,7 @@ export const keyboard = [
   
 
 ]
-export const moniter = [
+export const monitor = [
   {
      id: 1,
     title: "Viewsonic VA2261H-8 Full HD",

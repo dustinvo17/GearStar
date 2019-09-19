@@ -1,5 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-
-ReactDOM.render(<img src="img/headphone/1/1.jpg"></img>,document.querySelector('#root'))
+import App from './components/App'
+import {Provider} from 'react-redux'
+import {createStore,applyMiddleware} from 'redux';
+import ReduxThunk from 'redux-thunk'
+import combineReducers from './Reducers/combineReducers'
+const store = createStore(combineReducers,applyMiddleware(ReduxThunk))
+ReactDOM.render(<Provider store={store}><App/></Provider>,document.querySelector('#root'))
