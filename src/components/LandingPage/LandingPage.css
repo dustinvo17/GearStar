@@ -105,8 +105,9 @@ FEATURE PRODUCT */
    
 }
 .item-card-star{
-    color:#FFBC12;
- 
+    color:#FFBC12!important;
+    font-weight:900;
+    
 }
 .item-card-price {
     display:flex;

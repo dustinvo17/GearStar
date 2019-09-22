@@ -15,9 +15,8 @@ export const headphone = [
     img: [headphoneUrl(1,1,'jpg'),headphoneUrl(1,2,'png'),headphoneUrl(1,3,'png'),headphoneUrl(1,4,'png')],
     price: 180,
     company: "Steelseries",
-    info:
-      "https://www.tomsguide.com/us/steelseries-arctis-7,review-4140.html",
-    video:"https://www.youtube.com/watch?v=jTHkKudg084",
+    
+    video:"https://www.youtube.com/embed/jTHkKudg084",
     inCart: false,
     count: 0,
     total: 0
@@ -28,9 +27,8 @@ export const headphone = [
     img: [headphoneUrl(2,1,'png'),headphoneUrl(2,2,'png'),headphoneUrl(2,3,'png'),headphoneUrl(2,4,'png')],
     price: 199.99,
     company: "Razer",
-    info:
-      "https://www.tomsguide.com/us/razer-nari-ultimate,review-6037.html",
-    video:"https://www.youtube.com/watch?v=Mi_bccLxGJg",
+   
+    video:"https://www.youtube.com/embed/Mi_bccLxGJg",
     inCart: false,
     count: 0,
     total: 0
@@ -41,9 +39,8 @@ export const headphone = [
     img: [headphoneUrl(3,1,'jpg'),headphoneUrl(3,3,'jpg'),headphoneUrl(3,4,'jpg')],
     price: 159.99,
     company: "Asus",
-    info:
-      "https://www.tomsguide.com/us/razer-nari-ultimate,review-6037.html",
-    video:"https://www.youtube.com/watch?v=CrCv1PoKrrA",
+  
+    video:"https://www.youtube.com/embed/CrCv1PoKrrA",
     inCart: false,
     count: 0,
     total: 0
@@ -54,9 +51,8 @@ export const headphone = [
     img: [headphoneUrl(4,1,'jpg'),headphoneUrl(4,2,'jpg'),headphoneUrl(4,3,'jpg')],
     price: 169.99,
     company: "Asus",
-    info:
-      "https://www.trustedreviews.com/reviews/asus-strix-7-1",
-    video:"https://www.youtube.com/watch?v=xpOZVs3Dds8",
+  
+    video:"https://www.youtube.com/embed/xpOZVs3Dds8",
     inCart: false,
     count: 0,
     total: 0
@@ -67,9 +63,8 @@ export const headphone = [
     img: [headphoneUrl(5,1,'jpg')],
     price: 159.99,
     company: "SteelSeries",
-    info:
-      "https://www.techradar.com/reviews/steelseries-arctis-pro-headset",
-    video:"https://www.youtube.com/watch?v=0AEcCQcB3D4",
+    
+    video:"https://www.youtube.com/embed/0AEcCQcB3D4",
     inCart: false,
     count: 0,
     total: 0
@@ -80,9 +75,8 @@ export const headphone = [
     img: [headphoneUrl(6,1,'jpg')],
     price: 229.95,
     company: "Sennheiser",
-    info:
-      "https://www.pcgamesn.com/sennheiser-gsp-500-gaming-headset-review-performance",
-    video:"https://www.youtube.com/watch?v=EbbC1RmBTD4",
+   
+    video:"https://www.youtube.com/embed/EbbC1RmBTD4",
     inCart: false,
     count: 0,
     total: 0
@@ -93,9 +87,8 @@ export const headphone = [
     img: [headphoneUrl(7,1,'jpg')],
     price: 229,
     company: "Razer",
-    info:
-      "https://www.techradar.com/reviews/razer-thresher-ultimate",
-    video:"https://www.youtube.com/watch?v=km-aK4q_mgQ",
+    
+    video:"https://www.youtube.com/embed/km-aK4q_mgQ",
     inCart: false,
     count: 0,
     total: 0
@@ -106,9 +99,8 @@ export const headphone = [
     img: [headphoneUrl(8,1,'jpg')],
     price: 249,
     company: "Razer",
-    info:
-      "https://www.soundguys.com/razer-thresher-ultimate-review-23103/",
-    video:"https://www.youtube.com/watch?v=ejBLljBG5Ek",
+  
+    video:"https://www.youtube.com/embed/ejBLljBG5Ek",
     inCart: false,
     count: 0,
     total: 0
@@ -119,9 +111,8 @@ export const headphone = [
     img: [headphoneUrl(9,1,'jpg')],
     price: 215.99,
     company: "Sennheiser",
-    info:
-      "https://www.tomsguide.com/us/sennheiser-gsp-600,review-5576.html",
-    video:"https://www.youtube.com/watch?v=dvDLCpMo8ls",
+ 
+    video:"https://www.youtube.com/embed/dvDLCpMo8ls",
     inCart: false,
     count: 0,
     total: 0
@@ -132,9 +123,8 @@ export const headphone = [
     img: [headphoneUrl(10,1,'png'),headphoneUrl(10,2,'jpg')],
     price: 229.99,
     company: "Sennheiser",
-    info:
-      "https://www.tomsguide.com/us/steelseries-arctis-pro-wireless,review-5209.html",
-    video:"https://www.youtube.com/watch?v=ffE4lC8gYEY",
+  
+    video:"https://www.youtube.com/embed/ffE4lC8gYEY",
     inCart: false,
     count: 0,
     total: 0
@@ -151,9 +141,8 @@ export const keyboard = [
     price: 199.99,
     switch:'OmniPoint',
     company: "Steelseries",
-    info:
-      "https://www.tomsguide.com/us/steelseries-apex-pro,review-6606.html",
-    video:"https://www.youtube.com/watch?v=-RakwYgTmmY",
+   
+    video:"https://www.youtube.com/embed/-RakwYgTmmY",
     inCart: false,
     count: 0,
     total: 0
@@ -165,9 +154,8 @@ export const keyboard = [
     keyboardUrl(2,4,'jpg'),keyboardUrl(2,5,'jpg')],
     price: 89.99,
     company: "Asus",
-    info:
-      "https://www.trustedreviews.com/reviews/asus-rog-claymore",
-    video:"https://www.youtube.com/watch?v=od6fH8rlGow",
+ 
+    video:"https://www.youtube.com/embed/od6fH8rlGow",
     inCart: false,
     count: 0,
     total: 0
@@ -178,9 +166,8 @@ export const keyboard = [
     img: [keyboardUrl(3,1,'jpg'),keyboardUrl(3,2,'jpg')],
     price: 49.99,
     company: "Asus",
-    info:
-      "https://www.kitguru.net/tech-news/featured-tech-reviews/briony-hannam/asus-cerberus-mechanical-rgb-keyboard-review/",
-    video:"https://www.youtube.com/watch?v=gEqlR1aln7c",
+ 
+    video:"https://www.youtube.com/embed/gEqlR1aln7c",
     inCart: false,
     count: 0,
     total: 0
@@ -192,9 +179,8 @@ export const keyboard = [
      switch:'Green Switches',
     price: 119.99,
     company: "Razer",
-    info:
-      "https://www.destructoid.com/review-overwatch-razer-blackwidow-deathadder-chroma-goliathus-speed-361426.phtml",
-    video:"https://www.youtube.com/watch?v=dKADyv8vLww",
+   
+    video:"https://www.youtube.com/embed/dKADyv8vLww",
     inCart: false,
     count: 0,
     total: 0
@@ -217,9 +203,8 @@ export const keyboard = [
     switch:'Cherry MX Blue/Red',
     price: 49.99,
     company: "Cougar",
-      info:
-      "https://www.pcworld.com/article/3137615/cougar-attack-x3-review-an-unpretentious-board-with-genuine-cherry-keys.html",
-    video:"https://www.youtube.com/watch?v=oV2iIdT9Ew8",
+   
+    video:"https://www.youtube.com/embed/oV2iIdT9Ew8",
     inCart: false,
     count: 0,
     total: 0
@@ -260,8 +245,8 @@ export const keyboard = [
     img: [keyboardUrl(10,1,'png'),keyboardUrl(10,2,'png'),keyboardUrl(10,3,'jpg'),keyboardUrl(10,4,'jpg'),keyboardUrl(10,5,'jpg'),keyboardUrl(10,6,'jpg')],
     price: 51.99,
     company:"HyperX Kingston",
-    info:"https://www.hyperxgaming.com/us/keyboards/alloy-core-rgb-membrane-gaming-keyboard",
-    video:"https://www.youtube.com/watch?v=7zb0Ua9R-Y4",
+  
+    video:"https://www.youtube.com/embed/7zb0Ua9R-Y4",
     inCart: false,
     count: 0,
     total: 0
@@ -323,8 +308,8 @@ export const keyboard = [
     img: [keyboardUrl(16,1,'jpg'),keyboardUrl(16,2,'jpg'),keyboardUrl(16,3,'jpg'),keyboardUrl(16,4,'jpg'),keyboardUrl(16,5,'jpg')],
     price: 73.99,
     company:"Logitech",
-    info:"https://www.tomsguide.com/us/logitech-g613-gaming-keyboard,review-4648.html",
-    video:"https://www.youtube.com/watch?v=BqfSjYJKB7A",
+  
+    video:"https://www.youtube.com/embed/BqfSjYJKB7A",
     switch: 'Romer-G',
     inCart: false,
     count: 0,
@@ -336,7 +321,7 @@ export const keyboard = [
     img: [keyboardUrl(17,1,'png'),keyboardUrl(17,2,'png'),keyboardUrl(17,3,'png'),keyboardUrl(17,4,'png'),keyboardUrl(17,5,'png'),keyboardUrl(17,6,'png'),keyboardUrl(17,7,'png')],
     price: 73.99,
     company:"Cougar",
-    info:"https://www.pcmag.com/review/360924/cougar-puri",
+  
     switch: 'UIX mechanical RED',
     inCart: false,
     count: 0,
@@ -348,8 +333,8 @@ export const keyboard = [
     img: [keyboardUrl(18,1,'png'),keyboardUrl(18,2,'jpg'),keyboardUrl(18,3,'jpg'),keyboardUrl(18,4,'jpg'),keyboardUrl(18,5,'jpg'),keyboardUrl(18,6,'jpg')],
     price: 73.99,
     company:"Razer",
-    info:"https://www.tomshardware.com/reviews/razer-black-widow-lite,5910.html",
-    video:"https://www.youtube.com/watch?v=Qy50_axI-y8",
+   
+    video:"https://www.youtube.com/embed/Qy50_axI-y8",
     switch: 'Razer Orange Switch + O-ring',
     inCart: false,
     count: 0,
@@ -361,8 +346,8 @@ export const keyboard = [
     img: [keyboardUrl(19,1,'jpg'),keyboardUrl(19,2,'jpg'),keyboardUrl(19,3,'jpg'),keyboardUrl(19,4,'jpg'),keyboardUrl(19,5,'jpg')],
     price: 73.99,
     company:"Logitech",
-    info:"https://prosettings.net/review/logitech-g-pro-mechanical-keyboard/",
-    video:"https://www.youtube.com/watch?v=D1TYwnl4dW8",
+  
+    video:"https://www.youtube.com/embed/D1TYwnl4dW8",
     switch: 'Romer-G',
     inCart: false,
     count: 0,
@@ -374,8 +359,8 @@ export const keyboard = [
     img: [keyboardUrl(20,1,'jpg'),keyboardUrl(20,2,'jpg'),keyboardUrl(20,3,'jpg'),keyboardUrl(20,4,'jpg'),keyboardUrl(20,5,'jpg'),keyboardUrl(20,6,'jpg'),keyboardUrl(20,7,'jpg')],
     price: 79.99,
     company:"iKBC",
-    info:"https://drop.com/buy/ikbc-td108-blue-led-backlit-mechanical-keyboard",
-    video:"https://www.youtube.com/watch?v=KYWhge-0hR4",
+  
+    video:"https://www.youtube.com/embed/KYWhge-0hR4",
     switch: 'Red/Brown/Blue ',
     inCart: false,
     count: 0,
@@ -387,7 +372,7 @@ export const keyboard = [
     img: [keyboardUrl(21,1,'jpg'),keyboardUrl(21,2,'png'),keyboardUrl(21,3,'png'),keyboardUrl(21,4,'png')],
     price: 99.99,
     company:"Durgod",
-    video:"https://www.youtube.com/watch?v=dSXrde3sJpc",
+    video:"https://www.youtube.com/embed/dSXrde3sJpc",
     switch: 'MX Cherry Blue/Brown/Red',
     inCart: false,
     count: 0,
@@ -399,7 +384,7 @@ export const keyboard = [
     img: [keyboardUrl(22,1,'jpg'),keyboardUrl(22,2,'png'),keyboardUrl(22,3,'png'),keyboardUrl(22,4,'png')],
     price: 99.99,
     company:"Durgod",
-    video:"https://www.youtube.com/watch?v=dSXrde3sJpc",
+    video:"https://www.youtube.com/embed/dSXrde3sJpc",
     switch: 'MX Cherry Blue/Brown/Red',
     inCart: false,
     count: 0,
@@ -411,7 +396,7 @@ export const keyboard = [
     img: [keyboardUrl(23,1,'jpg'),keyboardUrl(23,2,'png'),keyboardUrl(23,3,'png'),keyboardUrl(23,4,'png'),keyboardUrl(23,5,'png'),keyboardUrl(23,6,'png'),keyboardUrl(23,7,'png')],
     price: 99.99,
     company:"Logitech",
-    video:"https://www.youtube.com/watch?v=xSAbGup5HVA",
+    video:"https://www.youtube.com/embed/xSAbGup5HVA",
     switch: 'TACTILE / LINEAR (Romer G)',
     inCart: false,
     count: 0,
@@ -423,7 +408,7 @@ export const keyboard = [
     img: [keyboardUrl(24,1,'png'),keyboardUrl(24,2,'png'),keyboardUrl(24,3,'png'),keyboardUrl(24,4,'png'),keyboardUrl(24,5,'png')],
     price: 99.99,
     company:"Corsair",
-    video:"https://www.youtube.com/watch?v=Q4wjpNMwlUg",
+    video:"https://www.youtube.com/embed/Q4wjpNMwlUg",
     inCart: false,
     count: 0,
     total: 0
@@ -438,7 +423,7 @@ export const keyboard = [
 ,keyboardUrl(25,10,'jpg')],
     price: 99.99,
     company:"Razer",
-    video:"https://www.youtube.com/watch?v=73ysn2YtTTE",
+    video:"https://www.youtube.com/embed/73ysn2YtTTE",
     inCart: false,
     count: 0,
     total: 0
@@ -449,7 +434,7 @@ export const keyboard = [
     img: [keyboardUrl(26,1,'png'),keyboardUrl(26,2,'png'),keyboardUrl(26,3,'png'),keyboardUrl(26,4,'png')],
     price: 99.99,
     company:"MSI",
-    video:"https://www.youtube.com/watch?v=z8lzqnTyQxk",
+    video:"https://www.youtube.com/embed/z8lzqnTyQxk",
     switch:"Cherry RED",
     inCart: false,
     count: 0,
@@ -461,7 +446,7 @@ export const keyboard = [
     img: [keyboardUrl(27,1,'jpg'),keyboardUrl(27,2,'png'),keyboardUrl(27,3,'png'),keyboardUrl(27,4,'png'),keyboardUrl(27,5,'png'),keyboardUrl(27,6,'png')],
     price: 99.99,
     company:"MSI",
-    video:"https://www.youtube.com/watch?v=NRG1Q9yQsk8",
+    video:"https://www.youtube.com/embed/NRG1Q9yQsk8",
     inCart: false,
     count: 0,
     total: 0
@@ -473,7 +458,7 @@ export const keyboard = [
     price: 99.99,
     company:"Corsair",
     switch:"Blue Switches",
-    video:"https://www.youtube.com/watch?v=v__GMbOH9Nc",
+    video:"https://www.youtube.com/embed/v__GMbOH9Nc",
     inCart: false,
     count: 0,
     total: 0
@@ -481,11 +466,11 @@ export const keyboard = [
      {
      id: 29,
     title: "Gigabyte Aorus K7",
-    img: [keyboardUrl(29,1,'jpg'),keyboardUrl(29,2,'png'),keyboardUrl(29,3,'png'),keyboardUrl(29,4,'png'),keyboardUrl(29,5,'png')],
+    img: [keyboardUrl(29,1,'jpg'),keyboardUrl(29,3,'png'),keyboardUrl(29,4,'png'),keyboardUrl(29,5,'png')],
     price: 99.99,
     company:"Gigabyte",
     switch:"Red",
-    video:"https://www.youtube.com/watch?v=44g8lk2IEzY",
+    video:"https://www.youtube.com/embed/44g8lk2IEzY",
     inCart: false,
     count: 0,
     total: 0
@@ -497,7 +482,7 @@ export const keyboard = [
     price: 99.99,
     company:"Vortex",
     switch:"Cherry MX White/Red/Brown",
-    video:"https://www.youtube.com/watch?v=f9fWogcwmXI",
+    video:"https://www.youtube.com/embed/f9fWogcwmXI",
     inCart: false,
     count: 0,
     total: 0
@@ -512,7 +497,7 @@ export const monitor = [
      id: 1,
     title: "Viewsonic VA2261H-8 Full HD",
     img: [moniterUrl(1,1,'jpg'),moniterUrl(1,2,'jpg')],
-    video:"https://www.youtube.com/watch?v=O3hfgcs5Po8&t=161s",
+    video:"https://www.youtube.com/embed/O3hfgcs5Po8&t=161s",
     price: 95.99,
     company:"Viewsonic",
     inCart: false,
@@ -687,7 +672,7 @@ export const mouse = [
     {
      id: 4,
     title: "Fuhlen G90 Pro",
-    img: [mouseUrl(23,1,'png'),mouseUrl(23,2,'jpg'),mouseUrl(23,3,'png')],
+    img: [mouseUrl(23,1,'png'),mouseUrl(23,2,'jpg'),mouseUrl(23,3,'jpg')],
     company:"Fuhlen",
        price:30.99,
     inCart: false,
@@ -837,7 +822,7 @@ export const mouse = [
   },    {
      id: 19,
     title: "Steelseries Rival 310",
-    img: [mouseUrl(39,1,'png'),mouseUrl(39,2,'png'),mouseUrl(39,3,'png'),mouseUrl(39,4,'png'),mouseUrl(39,5,'png'),mouseUrl(39,6,'png')],
+    img: [mouseUrl(39,1,'png'),mouseUrl(39,3,'png'),mouseUrl(39,4,'png'),mouseUrl(39,5,'png'),mouseUrl(39,6,'png')],
     company:"Steelseries",
     price:55.99,
     inCart: false,

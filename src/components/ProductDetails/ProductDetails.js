@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
+import * as actions from '../../Actions/index'
 import ReactDOM from 'react-dom'
 import './ProductDetail.css'
  class ProductDetails extends Component {
@@ -18,6 +19,7 @@ import './ProductDetail.css'
      }
     render() {
         let {company,img,price,title} = this.props.detail
+        console.log(this.props)
         return (
             
             this.props.detail ?
@@ -38,8 +40,56 @@ import './ProductDetail.css'
                                 </div>
                             </div>
                         </div>
-                        <div className="details-info"></div>
+                        <div className="details-info">
+                            
+                                <h1 className="detail-item-price">${price}</h1>
+                            
+                             <div className="item-card-star">
+                            &#9734; &#9734; &#9734; &#9734; &#9734;
+                            </div>
+                            <div className="company">
+                                Company: {company}
+                            </div>
+                            <div className="status">
+                                Status: 100% - Fullbox
+                            </div>
+                            <div className="warranty">
+                              Warranty: 24 Months
+                            </div>
+                            {this.props.detail.switch ? <div className="switch">Switch: {this.props.detail.switch}</div> : ''}
+                            
+                            <div className="quantity-box">
+                                <label htmlFor="quantity">Quantity</label>
+                                <input min="0" type="number"></input>
+                            </div>
+
+                            <div className="cart-button-box">
+                                <div className="cart-button-container">
+                                    <div className="add-to-cart" onClick={()=>this.props.addToCart(this.props.detail,this.props.type)}><i className="fa fa-cart-plus cart-icon" ></i> Add to cart</div>
+                                </div>
+                                <div className="wishlist">
+                                    <i className="fa fa-heart-o"></i>
+                                </div>
+
+                            </div>
+                       
+                        </div>
+                      
                     </div>
+                  
+                  {this.props.detail.video ?   <div className="video-review">
+                        
+                        <div>
+                               <iframe  width="100%"
+                            height="800"
+                            frameBorder="0"
+                            border="0"
+                            cellSpacing="0" src={this.props.detail.video}>
+                            
+                        </iframe>
+                        </div>
+                     
+                    </div>:''}
                 </div>
             </div> :<div></div>
         )
@@ -53,9 +103,9 @@ const mapStateToProps = (state,{match:{params:{productType,id}}}) => {
          
                   return {
                      
-                detail:state.store[productType] ? 
-                state.store[productType].find(item=> item.id === parseInt(id)) :
-                ''
+                detail:state.store[productType] ? state.store[productType].find(item=> item.id === parseInt(id)) : '',
+                type:productType,
+               
             
             }   
           
@@ -63,4 +113,4 @@ const mapStateToProps = (state,{match:{params:{productType,id}}}) => {
     
    
 }
-export default connect(mapStateToProps, {})(ProductDetails)
+export default connect(mapStateToProps, actions)(ProductDetails)

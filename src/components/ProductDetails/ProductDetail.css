@@ -48,3 +48,83 @@
     
     border:1px solid #1DC681;
 }
+
+
+/* detail info */
+.details-info {
+    padding:8rem 20rem 0 20rem;
+   
+
+}
+.detail-item-price{
+    font-size:4.5rem;
+    color:#1DC681;
+}
+.details-info div {
+    font-size:2rem;
+    color:#8C939A;
+}
+
+.details-info >*:not(:last-child){
+    margin-bottom:3.5rem;
+}
+
+.quantity-box label {
+    font-size:inherit;
+    margin-right:2rem;
+}
+.quantity-box input {
+    padding:2rem;
+    font-size:inherit;
+     border:1px solid #E8E9EB;
+}
+.quantity-box input:focus{
+    outline: none;
+}
+.add-to-cart {
+    display:inline-block;
+    padding:1.5rem;
+    border-radius:20rem;
+    background:#1DC681;
+    color:white!important;
+   font-size:1.5rem!important;
+    letter-spacing: 1px;
+    font-weight:700;
+    cursor:pointer;
+    text-transform: uppercase;
+}
+.add-to-cart:hover{
+    background-color: #169a64;
+    
+}
+.add-to-cart .fa {
+  padding:0;
+ 
+  color:white;
+  background:none;
+  margin-right:0.5rem;
+
+}
+.cart-button-box {
+    display:flex;
+    align-items: center;
+      border-top:1px solid #E8E9EB;
+  border-bottom: 1px solid #E8E9EB;
+    padding:4rem 0;
+}
+.wishlist .fa {
+    background:#9A9DA2;
+    padding:2rem;
+     cursor:pointer;
+}
+.wishlist .fa:hover {
+    background-color: #169a64;
+}
+
+
+/* //review */
+
+.video-review {
+    padding:3rem;
+    border:1px solid #E8E9EB;
+}

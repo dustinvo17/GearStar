@@ -6,13 +6,26 @@ import './Header.css'
     state ={
         currentSlide:1,
         animation:true,
+     
+        
     }
+  
+    
  
    handleSlideSlick(id){
 
         this.setState({currentSlide:id,animation:true})
     
    }
+   
+
+
+   
+   
+   
+  
+  
+ 
 
    handleArrLeft =()=>{
        let id = this.state.currentSlide;
@@ -59,11 +72,13 @@ import './Header.css'
     
          
        }
+    
 
    }
+   
 
     render() {
-       
+      
         return (
             <div className="header"> 
                 <div className="topbar">
@@ -71,13 +86,7 @@ import './Header.css'
                         <div >Welcome to </div>
                         <div className="logo-text margin-text-topbar">GEARM</div>
                     </div>
-                    <div className="topbar-item topbar-item2">
-                        <div className="login-text">
-                            <div className="logo-text">LOGIN</div>
-                            <div className="margin-text-topbar">OR</div>
-                            <div className="logo-text">REGISTER</div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div className="header-top">
                     <div className="header-top-left">
@@ -94,7 +103,7 @@ import './Header.css'
                             <div className="header-contact-bar">
                                 {this.renderContactItem('headphone','customer support','1900-798-55-2351')}
                                  {this.renderContactItem('mail','contact us','support@gearm.com')}
-                                {this.renderContactItem('cart','my cart 0 items','$0.00')}
+                                <Link to="/cart"  className="header-contact-item" style={{textDecoration:'none'}}>{this.renderContactItem('cart',`my cart ${this.props.len} items`,`$${this.props.price}`)}</Link>
                             </div>
                         </div>
                         <div className="header-nav-bar">
@@ -134,7 +143,7 @@ import './Header.css'
                                 <h3>BATTLE QUEST</h3>
                             </li>
                               <li className="slide-content-button">
-                                <div className="shop-button">SHOP NOW</div>
+                                <Link to="/product"className="shop-button">SHOP NOW</Link>
                             </li>
                            
                         </ul>
@@ -165,8 +174,17 @@ import './Header.css'
     }
 }
 const mapStateToProps =(state)=>{
+    function calculatePrice(cart){
+       return cart.reduce((acc,item)=>{
+            return acc += item.total
+
+       },0)
+   }
     return {
-        store:state.store
+        store:state.store,
+         len:state.cart.length,
+         price:calculatePrice(state.cart)
+        
     }
 }
 export default connect(mapStateToProps,{})(Header)

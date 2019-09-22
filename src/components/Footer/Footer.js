@@ -48,9 +48,9 @@ export default class Footer extends Component {
                                   
             </div>
               
-            <div className="payment">
+            <div className="copy-right">
                 <p>    Copyright © 2019 <Link to="/" className="footer-route-link">GearM</Link>. All rights reserved</p>
-                <img src="/img/payment.png"/>
+            
             </div>
             
             </div>

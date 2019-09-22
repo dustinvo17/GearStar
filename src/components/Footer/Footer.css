@@ -63,14 +63,14 @@
     font-size:inherit;
     color:inherit;
 }
-.payment {
+.copy-right {
     display: flex;
     justify-content: space-between;
     width:60%;
     font-size:3rem;
     color:inherit;
 }
-.payment .footer-route-link {
+.copy-right .footer-route-link {
     color:white;
 }
 

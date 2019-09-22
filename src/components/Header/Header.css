@@ -14,11 +14,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-.topbar-item2{
-   
-    display:flex;
-    justify-content: flex-end;
-}
+
 .margin-text-topbar {
     margin:0 5px;
 }
@@ -232,6 +228,12 @@
     font-weight:600;
     margin:3rem 0 0 2rem;
     cursor: pointer;
+      text-decoration: none;
+  
+}
+.slide-content-button .shop-button {
+     text-decoration: none;
+     color:inherit;
 }
 .slide-content-button:hover{
     background-color: #169a64;

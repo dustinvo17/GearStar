@@ -1,7 +1,11 @@
 import {combineReducers} from 'redux'
 import store from './store'
-import filterGear from './filterGear'
+import filterStore from './filterStore'
+import cart from './cart'
+
 export default combineReducers({
     store,
-    filterGear
+    filterStore,
+    cart,
+    
 })

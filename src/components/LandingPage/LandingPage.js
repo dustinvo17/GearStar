@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
+
+import * as actions from '../../Actions/index'
 import './LandingPage.css'
 class LandingPage extends Component {
     renderFutureList(imgUrl, h2, p) {
@@ -24,7 +26,9 @@ class LandingPage extends Component {
             <h2 className="heading">{h2}</h2>
         </div>
     }
-    static renderItemGrid(product, itemType) {
+  
+   
+    static renderItemGrid(product, itemType,fc) {
 
         const {img, title, price, id} = product
        
@@ -46,8 +50,8 @@ class LandingPage extends Component {
                         &#9734; &#9734; &#9734; &#9734; &#9734;
                     </div>
                     <div className="item-card-price">
-                        <h3>${price}</h3>
-                        <i className="fa fa-cart-plus cart-icon"></i>
+                        <h3 >${price}</h3>
+                        <i onClick={()=>fc(product,itemType)}className="fa fa-cart-plus cart-icon"></i>
 
                     </div>
 
@@ -74,12 +78,13 @@ class LandingPage extends Component {
                             <br></br>Razer gears</p>
                     : <h1 className="banner-title">35% OFF</h1>}
 
-                <div className="slide-content-button banner-button">SHOP NOW</div>
+                <Link to="/product" className="slide-content-button banner-button">SHOP NOW</Link>
 
             </div>
         </div>
     }
     render() {
+        console.log(this.props)
         let item1
         let item2
         let item3
@@ -142,11 +147,11 @@ class LandingPage extends Component {
                     <div className="feature-products">
                         {this.renderHeading('BEST PLACES TO UPGRADE YOUR GEARS', 'FEATURED PRODUCTS')}
                         <div className="product-card-grid">
-                            {this.constructor.renderItemGrid(item1, 'headphone')}
-                            {this.constructor.renderItemGrid(item2, 'headphone',)}
-                            {this.constructor.renderItemGrid(item3, 'keyboard',)}
-                            {this.constructor.renderItemGrid(item4, 'monitor')}
-                            {this.constructor.renderItemGrid(item5, 'mouse')}
+                            {this.constructor.renderItemGrid(item1, 'headphone',this.props.addToCart)}
+                            {this.constructor.renderItemGrid(item2, 'headphone',this.props.addToCart)}
+                            {this.constructor.renderItemGrid(item3, 'keyboard',this.props.addToCart)}
+                            {this.constructor.renderItemGrid(item4, 'monitor',this.props.addToCart)}
+                            {this.constructor.renderItemGrid(item5, 'mouse',this.props.addToCart)}
 
                         </div>
                     </div>
@@ -163,10 +168,10 @@ class LandingPage extends Component {
                         {this.renderHeading('MULTIPLE TYPES OF POPULAR BRANDS', 'BEST SELLER')}
                         <div className="product-card-grid">
 
-                            {this.constructor.renderItemGrid(bestSell1, 'headphone')}
-                            {this.constructor.renderItemGrid(bestSell2, 'keyboard')}
-                            {this.constructor.renderItemGrid(bestSell3, 'monitor')}
-                            {this.constructor.renderItemGrid(bestSell4, 'mouse')}
+                            {this.constructor.renderItemGrid(bestSell1, 'headphone',this.props.addToCart)}
+                            {this.constructor.renderItemGrid(bestSell2, 'keyboard',this.props.addToCart)}
+                            {this.constructor.renderItemGrid(bestSell3, 'monitor',this.props.addToCart)}
+                            {this.constructor.renderItemGrid(bestSell4, 'mouse',this.props.addToCart)}
                         </div>
                     </div>
 
@@ -175,36 +180,39 @@ class LandingPage extends Component {
                         <div className="product-card-grid combo-list-grid">
                             <div className="combo-item">
                                 <h2 className="heading">Gaming</h2>
-                                {this.constructor.renderItemGrid(headphone1, 'headphone')}
-                                {this.constructor.renderItemGrid(keyboard1, 'keyboard')}
+                                {this.constructor.renderItemGrid(headphone1, 'headphone',this.props.addToCart)}
+                                {this.constructor.renderItemGrid(keyboard1, 'keyboard',this.props.addToCart)}
 
-                                {this.constructor.renderItemGrid(mouse1, 'mouse')}
+                                {this.constructor.renderItemGrid(mouse1, 'mouse',this.props.addToCart)}
                             </div>
                             <div className="combo-item">
                                 <h2 className="heading">Art</h2>
-                                {this.constructor.renderItemGrid(headphone2, 'headphone')}
-                                {this.constructor.renderItemGrid(monitor2a, 'monitor')}
+                                {this.constructor.renderItemGrid(headphone2, 'headphone',this.props.addToCart)}
+                                {this.constructor.renderItemGrid(monitor2a, 'monitor',this.props.addToCart)}
 
-                                {this.constructor.renderItemGrid(monitor2b, 'monitor')}
+                                {this.constructor.renderItemGrid(monitor2b, 'monitor',this.props.addToCart)}
                             </div>
                             <div className="combo-item">
                                 <h2 className="heading">Office</h2>
-                                {this.constructor.renderItemGrid(monitor3, 'monitor')}
-                                {this.constructor.renderItemGrid(keyboard3, 'keyboard')}
+                                {this.constructor.renderItemGrid(monitor3, 'monitor',this.props.addToCart)}
+                                {this.constructor.renderItemGrid(keyboard3, 'keyboard',this.props.addToCart)}
 
-                                {this.constructor.renderItemGrid(mouse3, 'mouse')}
+                                {this.constructor.renderItemGrid(mouse3, 'mouse',this.props.addToCart)}
                             </div>
 
                         </div>
 
                     </div>
-
+                   
                 </div>
+                
             : <div></div>)
     }
 }
 
 const mapStateToProps = (state) => {
-    return {store: state.store}
+    return {store: state.store,
+        modal:state.modal
+    }
 }
-export default connect(mapStateToProps, {})(LandingPage)
+export default connect(mapStateToProps, actions)(LandingPage)

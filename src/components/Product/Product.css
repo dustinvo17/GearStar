@@ -46,9 +46,10 @@ filter bar */
 }
 
 .product-heading {
-    font-size:5rem;
+    font-size:6rem;
+  
     text-align: center;
-    padding:4rem  0;
+    padding:2.5rem  0;
 }
 .filter-container {
     margin-right:3rem;
