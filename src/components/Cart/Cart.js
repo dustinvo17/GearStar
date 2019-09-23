@@ -31,6 +31,14 @@ import './Cart.css'
             </div>
         })
     }
+    calculateTotal(cart){
+      return cart.reduce((acc,item)=>{
+            return acc += item.total
+
+       },0)
+  
+   
+    }
     
     render() {
        console.log(this.props)
@@ -52,6 +60,10 @@ import './Cart.css'
                         <div>Total</div>
                     </div>
                     {this.renderCart(this.props.cart)}
+                    <div className="cart-total">
+                        <p>Subtotal</p> <p>${this.calculateTotal(this.props.cart)}</p>
+                    </div>
+                    <div className="cart-total tax">Tax included and shipping calculated at checkout</div>
                     <div  className="payment">
                          <Payment/>
                     </div>

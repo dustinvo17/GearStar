@@ -58,10 +58,7 @@ import './ProductDetail.css'
                             </div>
                             {this.props.detail.switch ? <div className="switch">Switch: {this.props.detail.switch}</div> : ''}
                             
-                            <div className="quantity-box">
-                                <label htmlFor="quantity">Quantity</label>
-                                <input min="0" type="number"></input>
-                            </div>
+                           
 
                             <div className="cart-button-box">
                                 <div className="cart-button-container">

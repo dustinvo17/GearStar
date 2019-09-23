@@ -69,18 +69,7 @@
     margin-bottom:3.5rem;
 }
 
-.quantity-box label {
-    font-size:inherit;
-    margin-right:2rem;
-}
-.quantity-box input {
-    padding:2rem;
-    font-size:inherit;
-     border:1px solid #E8E9EB;
-}
-.quantity-box input:focus{
-    outline: none;
-}
+
 .add-to-cart {
     display:inline-block;
     padding:1.5rem;

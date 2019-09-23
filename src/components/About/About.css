@@ -1,0 +1,52 @@
+.about-container {
+     padding:5rem;
+}
+.about-page {
+   
+    display:flex;
+   
+}
+.caption {
+    font-size:5rem;
+    
+}
+.caption-contain > * {
+  margin-bottom:4rem;
+}
+.caption-p {
+    font-size:1.5rem;
+   color:#8C939A;
+   font-weight:400;
+    
+}
+.about-info {
+    padding:0 3rem;
+}
+.stats {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    margin-top:10rem;
+}
+.stats-item {
+    display:flex;
+    font-size:4rem;
+    margin-bottom:10rem;
+}
+.stats-icon {
+    margin-right:4rem;
+}
+.stats-item .fa {
+    background:none;
+    color:#1DC681;
+    font-size:6rem;
+}
+.stats-item h3 {
+    font-weight:200;
+    font-size:4rem;
+    margin-bottom:1rem;
+}
+.stats-item p {
+    font-weight:900;
+    color:#6A737C;
+}
+

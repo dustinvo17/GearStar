@@ -1,0 +1,72 @@
+.contact-container {
+    padding:4rem;
+    font-size:15rem;
+}
+
+.contact-info {
+    background:#232528;
+    color:white;
+    padding:4rem;
+}
+.contact-info p {
+    font-size:1.8rem;
+    margin:4rem 0;
+
+}
+.contact-location {
+    display:grid;
+    grid-template-columns: 10% 1fr;
+    margin-bottom:5rem;
+    grid-gap:2rem;
+    font-weight:700;
+    letter-spacing: 1px;
+  
+}
+.contact-img-container {
+    display:flex;
+    align-items: center;
+    
+   
+}
+.contact-location img {
+   width:60%;
+
+   
+}
+.contact-location .fa {
+    background:none;
+  
+    
+}
+.contact-form {
+    margin-top:5rem;
+    text-align: center;
+}
+.contact-form h1{
+    margin:5rem 0;
+}
+.contact-form-grid {
+    display:grid;
+    grid-template-columns: repeat(3,minmax(30%,1fr));
+    grid-gap:2rem;
+    
+}
+.contact-form-grid input,textarea{
+    width:100%;
+    padding:2rem ;
+    background:#F5F5F5;
+    border:none;
+    font-size:2rem;
+   
+}
+.message {
+    grid-column: 1/-1;
+    
+}
+.message textarea {
+  width:100%;
+  height:30rem;
+}
+.contact-form .add-to-cart {
+    padding:2rem 15rem;
+}
