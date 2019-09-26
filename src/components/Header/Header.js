@@ -100,8 +100,8 @@ import './Header.css'
                    
                             <form onSubmit={(e)=>this.onSearchSubmit(e)} className={`search-bar-mobile ${this.state.mobileSearchOpen ? 'active':''}`}>
                                 <input className="search-mobile" onChange={(e)=>this.setState({search:e.target.value})} value={this.state.search} placeholder="Search entire store here..."></input>
-                                 <img className={`mobile-icons search-icon-mobile ${this.state.mobileSearchOpen ? 'icons-active':''}`}onClick={(e)=>this.onSearchSubmit(e)}   alt="search"src="/img/header-icon/search-icon.png"/>
-                                 <img onClick={()=>this.setState({mobileSearchOpen:false})} className={`mobile-icons x ${this.state.mobileSearchOpen ? 'icons-active':''}`}src="/img/header-icon/x.png" ></img>
+                                 <img alt="search-icon"className={`mobile-icons search-icon-mobile ${this.state.mobileSearchOpen ? 'icons-active':''}`}onClick={(e)=>this.onSearchSubmit(e)}   alt="search"src="/img/header-icon/search-icon.png"/>
+                                 <img alt="x-icon"onClick={()=>this.setState({mobileSearchOpen:false})} className={`mobile-icons x ${this.state.mobileSearchOpen ? 'icons-active':''}`}src="/img/header-icon/x.png" ></img>
                             </form>
                   
                     <div className="header-top-left">

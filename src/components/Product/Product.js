@@ -75,7 +75,7 @@ class Product extends React.Component {
         )
     }
     render() {
-       console.log(this.props.store.headphone)
+   
    
         return (
             this.props.storeFilter ?

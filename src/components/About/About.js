@@ -36,11 +36,10 @@ export default class About extends Component {
                         </div>
                     </div>
                     <div className="about-img">
-                        <img src="/img/about-img.webp"/>
+                        <img alt="about" src="/img/about-img.webp"/>
                     </div>
                 </div>
 
-              
             </div>
 
         )

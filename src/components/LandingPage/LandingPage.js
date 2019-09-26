@@ -8,7 +8,7 @@ class LandingPage extends Component {
     renderFutureList(imgUrl, h2, p) {
         return <div className="feature-item">
 
-            <img
+            <img alt={imgUrl}
                 className="feature-img"
                 src={`/img/landing-page-icon/icon-feature-${imgUrl}.png`}></img>
 

@@ -55,3 +55,26 @@ box-shadow: 10px 10px 54px 38px rgba(0,0,0,0.75);
 .modal-line a:hover {
      color:#3F9A71;
 }
+@media only screen and (max-width: 650px) {
+    .modal-content {
+
+   
+    font-size:2rem;
+    padding:1rem;
+} 
+}
+@media only screen and (max-width: 380px) {
+    .fa-close {
+        font-size:2rem;
+    }
+    .modal-line a {
+        border:none;
+        margin:0 0.5rem;
+    }
+    .modal-content {
+
+   
+   
+    padding:0.5rem;
+} 
+}

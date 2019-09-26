@@ -14,12 +14,12 @@ import './ProductDetail.css'
      renderImgList(imgList){
         return imgList.map((imgUrl,index) =>{
      
-            return  <div key={index} onClick={()=>this.setState({currentimg:index})}className={`image-small-item ${this.state.currentimg === index ? 'onSlide':''}` } ><img src={'/'+imgUrl}></img></div>
+            return  <div key={index} onClick={()=>this.setState({currentimg:index})}className={`image-small-item ${this.state.currentimg === index ? 'onSlide':''}` } ><img alt={imgUrl} src={'/'+imgUrl}></img></div>
         })
      }
     render() {
         let {company,img,price,title} = this.props.detail
-        console.log(this.props)
+      
         return (
             
             this.props.detail ?
@@ -33,7 +33,7 @@ import './ProductDetail.css'
                         <div className="details-images">
                             <div className="img-big-container">
                                 <div>
-                                    <img  className="slide-img-detail"src={'/'+img[this.state.currentimg]}></img>
+                                    <img  alt="img-detail"className="slide-img-detail"src={'/'+img[this.state.currentimg]}></img>
                                 </div>
                                 <div className="image-small-list" >
                                     {this.renderImgList(img)}
@@ -82,7 +82,7 @@ import './ProductDetail.css'
                             frameBorder="0"
                             border="0"
                             cellSpacing="0" src={this.props.detail.video}>
-                            
+                            Review
                         </iframe>
                         </div>
                      
