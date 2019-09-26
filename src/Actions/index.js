@@ -14,10 +14,7 @@ export const uploadData = () =>{
         
     }
 }
-
-
-export const filterGear =(type)=>{
-    let headphoneAdd = headphone.map(item => {
+  let headphoneAdd = headphone.map(item => {
        return {...item,type:'headphone'}
     })
      let keyboardAdd = keyboard.map(item => {
@@ -29,6 +26,9 @@ export const filterGear =(type)=>{
      let mouseAdd = mouse.map(item => {
         return  {...item,type:'mouse'}
     })
+
+export const filterGear =(type)=>{
+  
  
     let returnData;
 
@@ -62,6 +62,15 @@ export const filterGear =(type)=>{
        
        
     }
+export const searchGear = (keyword) =>(dispatch) =>{
+    let returnData = [...keyboardAdd,...mouseAdd,...headphoneAdd,...monitorAdd]
+    let result = returnData.filter(item =>{
+        return (item.title.toLowerCase().includes(keyword.toLowerCase()) || item.company.toLowerCase()=== keyword.toLowerCase())
+    })
+    console.log(result)
+    dispatch( {type:"FILTERGEAR",payload:result})
+     history.push('/product')
+}
 let cart = []
 export const addToCart =(item,itemType)=>(dispatch) =>{
      

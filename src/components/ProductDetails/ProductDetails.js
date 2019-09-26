@@ -35,7 +35,7 @@ import './ProductDetail.css'
                                 <div>
                                     <img  className="slide-img-detail"src={'/'+img[this.state.currentimg]}></img>
                                 </div>
-                                <div className="image-small-list" style={{display:'grid',gridTemplateColumns:`repeat(5,10rem)`}}>
+                                <div className="image-small-list" >
                                     {this.renderImgList(img)}
                                 </div>
                             </div>

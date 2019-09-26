@@ -26,3 +26,8 @@ html,body,*{
   
   
 }
+@media only screen and (max-width: 1600px) {
+  .section-template {
+    padding:0;
+  }
+}

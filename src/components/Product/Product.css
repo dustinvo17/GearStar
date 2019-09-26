@@ -38,6 +38,8 @@ filter bar */
     display:flex;
     align-items: center;
        font-size:5rem;
+        padding:2rem 6rem;
+    background:#1E2024;
 }
 .numberProduct {
     font-size:1.5rem;
@@ -54,10 +56,7 @@ filter bar */
 .filter-container {
     margin-right:3rem;
 }
-.filter-bar {
-    padding:2rem 6rem;
-    background:#1E2024;
-}
+
 .filter-bar label {
     color:white;
     text-transform: uppercase;
@@ -81,4 +80,22 @@ filter bar */
 }
 .select-css:focus{
     outline:none;
+}
+
+@media only screen and (max-width: 600px) { 
+    .product-route-grid {
+    grid-gap:1rem;
+  
+}
+}
+@media only screen and (max-width: 450px) { 
+    .filter-bar {
+   
+   
+       font-size:3rem;
+          padding:1rem 2rem;
+}
+.product-heading {
+    font-size:4rem;
+}
 }

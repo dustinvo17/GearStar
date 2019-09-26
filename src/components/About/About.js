@@ -35,7 +35,7 @@ export default class About extends Component {
                             {this.renderStatsItem('map-signs', '132', 'Countries where we have clients.')}
                         </div>
                     </div>
-                    <div>
+                    <div className="about-img">
                         <img src="/img/about-img.webp"/>
                     </div>
                 </div>

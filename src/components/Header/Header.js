@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
+import {searchGear} from '../../Actions/index'
 import './Header.css'
  class Header extends Component {
     state ={
         currentSlide:1,
         animation:true,
-     
+        search:'',
+        navOpen:false,
+        mobileSearchOpen:false
         
     }
   
@@ -76,7 +79,11 @@ import './Header.css'
 
    }
    
-
+   onSearchSubmit =(e)=>{
+       e.preventDefault()
+       this.props.searchGear(this.state.search)
+      this.setState({search:''})
+   }
     render() {
       
         return (
@@ -85,21 +92,36 @@ import './Header.css'
                     <div className="topbar-item">
                         <div >Welcome to </div>
                         <div className="logo-text margin-text-topbar">GEARM</div>
+                       
                     </div>
                     
                 </div>
                 <div className="header-top">
+                   
+                            <form onSubmit={(e)=>this.onSearchSubmit(e)} className={`search-bar-mobile ${this.state.mobileSearchOpen ? 'active':''}`}>
+                                <input className="search-mobile" onChange={(e)=>this.setState({search:e.target.value})} value={this.state.search} placeholder="Search entire store here..."></input>
+                                 <img className={`mobile-icons search-icon-mobile ${this.state.mobileSearchOpen ? 'icons-active':''}`}onClick={(e)=>this.onSearchSubmit(e)}   alt="search"src="/img/header-icon/search-icon.png"/>
+                                 <img onClick={()=>this.setState({mobileSearchOpen:false})} className={`mobile-icons x ${this.state.mobileSearchOpen ? 'icons-active':''}`}src="/img/header-icon/x.png" ></img>
+                            </form>
+                  
                     <div className="header-top-left">
                      
                             <Link to="/"><img  alt="logo" className="gearm-logo"src="/img/header-icon/gearm-logo.png"></img></Link>
                       
                     </div>
+                    {/* RESPONSIVE MOBILE BAR */}
+                    <div className="header-mobile-nav">
+                         <i className="fa fa-search" onClick={()=>this.setState({mobileSearchOpen:!this.state.mobileSearchOpen})}></i>
+                       <Link to="/cart"><i className="fa fa-shopping-bag"></i></Link>
+                       <i className="fa fa-bars" onClick={()=>this.setState({navOpen:!this.state.navOpen})}></i>
+                     {/* RESPONSIVE MOBILE BAR */}
+                    </div>
                     <div className="header-top-right">
                         <div className="header-search-bar">
-                            <div className="search-bar-input">
-                                <input className="search-input" placeholder="Search entire store here..."></input>
-                                 <img  alt="search"className="search-icon"src="/img/header-icon/search-icon.png"/>
-                            </div>
+                            <form onSubmit={(e)=>this.onSearchSubmit(e)} className="search-bar-input">
+                                <input className="search-input" onChange={(e)=>this.setState({search:e.target.value})} value={this.state.search} placeholder="Search entire store here..."></input>
+                                 <img onClick={(e)=>this.onSearchSubmit(e)}  alt="search"className="search-icon"src="/img/header-icon/search-icon.png" style={{cursor:'pointer'}}/>
+                            </form>
                             <div className="header-contact-bar">
                                 {this.renderContactItem('headphone','customer support','1900-798-55-2351')}
                                  {this.renderContactItem('mail','contact us','support@gearm.com')}
@@ -128,8 +150,24 @@ import './Header.css'
                            </div>
                         </div>
                     </div>
-
+                
                 </div>
+                 {/* RESPONSIVE MOBILE BAR */}
+                <div className={`nav-bar-mobile ${this.state.navOpen  ? 'open-nav':''}`} >
+                                <Link to="/" className="nav-item-mobile">
+                                    <span>Home</span>
+                                </Link>
+                                 <Link to="/product" className="nav-item-mobile">
+                                    <span>Product</span>
+                                </Link>
+                                 <Link to="/about" className="nav-item-mobile">
+                                    <span>About</span>
+                                </Link>
+                                 <Link to="/contact" className="nav-item-mobile">
+                                    <span>Contact</span>
+                                </Link>
+                </div>
+                 {/* RESPONSIVE MOBILE BAR */}
                 {this.props.location.pathname.length === 1 ?  <div className="slide-show-image"   onAnimationEnd={() => this.setState({ animation: false })} style={{backgroundImage:`url(/img/header-icon/header-slide${this.state.currentSlide}.jpg)`}}>
                     <div className="slide-show-content">
                         <ul className={`slide-content-list ${this.state.animation ? 'list-animation':''}`} >
@@ -187,5 +225,5 @@ const mapStateToProps =(state)=>{
         
     }
 }
-export default connect(mapStateToProps,{})(Header)
+export default connect(mapStateToProps,{searchGear})(Header)
 

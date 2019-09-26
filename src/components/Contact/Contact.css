@@ -70,3 +70,48 @@
 .contact-form .add-to-cart {
     padding:2rem 15rem;
 }
+
+@media only screen and (max-width: 610px) { 
+    .contact-form-grid input,textarea{
+        font-size:1.5rem;
+    }
+    .contact-location {
+    
+    grid-template-columns: 8% 1fr;
+   
+  
+}
+.contact-container {
+    font-size:12rem;
+}
+.contact-info p {
+    font-size:1.5rem;
+}
+.contact-form .add-to-cart {
+    padding:2rem 10rem;
+}
+}
+@media only screen and (max-width: 500px) { 
+    .contact-location {
+        display:flex;
+        flex-direction: column;
+       
+    }
+    .contact-info {
+        padding:2rem;
+    }
+    .contact-location img {
+   width:10%;
+   margin-bottom:1rem;
+
+   
+}
+    .contact-container {
+    font-size:10rem;
+    padding:1rem;
+}
+.contact-form .add-to-cart {
+    padding:2rem 8rem;
+}
+    
+}

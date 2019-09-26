@@ -11,7 +11,10 @@ class Product extends React.Component {
      componentDidMount() { 
 
          ReactDOM.findDOMNode(this).scrollIntoView();
-           this.props.filterGear('general')
+           if(!this.props.storeFilter.length){
+                this.props.filterGear('general')
+           }
+               
  
         }
     
@@ -122,7 +125,7 @@ const mapStateToProps =(state)=>{
     return {
         // HAS SEPERATED STORES TO FILTER 
      
-       totalFilters:numberOfFilter,
+       totalFilters:numberOfFilter > 0 ? numberOfFilter :1,
        storeFilter:state.filterStore,
        store:state.store
     }
