@@ -67,7 +67,7 @@ class LandingPage extends Component {
                 className="banner-img"
                 src={`/img/landing-page-icon/${banner === 1
                 ? 'banner-1.jpg'
-                : 'banner-2.webp'}`}
+                : 'banner-2.jpg'}`}
                 alt={`banner${banner}`}/>
             <div className="banner-content">
                 <h2 className="banner-title">SALE OFF {banner === 1
@@ -84,7 +84,7 @@ class LandingPage extends Component {
         </div>
     }
     render() {
-        console.log(this.props)
+      
         let item1
         let item2
         let item3

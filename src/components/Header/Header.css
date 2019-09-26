@@ -35,7 +35,7 @@
 
 /* HEADER-TOP */
 .header-top {
-    background:linear-gradient(rgba(255,255,255,0.01), rgba(255,255,255,0.01)), url('./header-top-bg.webp');
+    background:linear-gradient(rgba(255,255,255,0.01), rgba(255,255,255,0.01)), url('./header-top-bg.png');
     display:flex;
     padding:0 2rem;
     position: relative;
@@ -574,9 +574,8 @@
 }
 @media only screen and (max-width: 400px) { 
     .topbar {
-     
+  
     padding:2.5rem;
-   
     
-}
-}   
+} 
+}  
