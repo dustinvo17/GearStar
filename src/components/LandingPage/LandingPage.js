@@ -62,12 +62,14 @@ class LandingPage extends Component {
 
     }
     renderBannerItem(banner) {
+       
         return <div className="banner-item">
+            
             <img
                 className="banner-img"
                 src={`/img/landing-page-icon/${banner === 1
                 ? 'banner-1.jpg'
-                : 'banner-2.jpg'}`}
+                : 'banner-2.png'}`}
                 alt={`banner${banner}`}/>
             <div className="banner-content">
                 <h2 className="banner-title">SALE OFF {banner === 1
