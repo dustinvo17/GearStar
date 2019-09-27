@@ -112,7 +112,7 @@ import './Header.css'
                     {/* RESPONSIVE MOBILE BAR */}
                     <div className="header-mobile-nav">
                          <i className="fa fa-search" onClick={()=>this.setState({mobileSearchOpen:!this.state.mobileSearchOpen})}></i>
-                       <Link to="/cart"><i className="fa fa-shopping-bag"></i></Link>
+                       <Link to="/cart"><i className="fa fa-shopping-bag"><span>{this.props.len}</span></i></Link>
                        <i className="fa fa-bars" onClick={()=>this.setState({navOpen:!this.state.navOpen})}></i>
                      {/* RESPONSIVE MOBILE BAR */}
                     </div>

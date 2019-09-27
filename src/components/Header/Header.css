@@ -345,6 +345,7 @@
     display:none;
     
 }
+
 .icons-active {
     display:inline-block;
 }
@@ -398,6 +399,22 @@
 }
 .header-mobile-nav i:hover{
     background: #169a64;
+}
+.fa-shopping-bag {
+    position: relative;
+   
+}
+.fa-shopping-bag span {
+    position: absolute;
+    top:-1.5rem;
+    right:-0.5rem;
+    font-size:1.2rem;
+    font-weight:900;
+    color:#1DC681;
+    background:white;
+    padding:0.5rem;
+    border-radius:2px;
+    
 }
 
 .nav-bar-mobile{
