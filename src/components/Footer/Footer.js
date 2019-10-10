@@ -33,8 +33,6 @@ export default class Footer extends Component {
                   <div className="footer-link">
                         
                         {this.renderLinkBox('about','About us')}
-                        
-                        {this.renderLinkBox('login','Your account')}
                      
                         {this.renderLinkBox('contact','Contact us')}
                        
