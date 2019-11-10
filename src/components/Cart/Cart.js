@@ -7,7 +7,9 @@ import './Cart.css'
 import { NONAME } from 'dns';
     class Cart extends Component {
     renderCart(cart){
-        return cart.map(({title,price,count,total,img})=>{
+       
+        return cart.map(({title,price,count,total,img,type})=>{
+            
             return <div key={title}className="grid-cart-item">
                     <div className="product-cart-item">
                         <div className="cart-img-container">
@@ -16,7 +18,7 @@ import { NONAME } from 'dns';
                         
                         <div className="product-cart-info">
                             <h2>{title} {window.innerWidth < 900 ? `(x${count})`:'' }</h2>
-                            <div className="btn-remove" onClick={()=>this.props.removeCart(title)}>Remove</div>
+                            <div className="btn-remove" onClick={()=>this.props.removeCart(title,type)}>Remove</div>
                         </div>
                         
                     </div>

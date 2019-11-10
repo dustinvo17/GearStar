@@ -73,25 +73,35 @@ export const searchGear = (keyword) =>(dispatch) =>{
 }
 let cart = []
 export const addToCart =(item,itemType)=>(dispatch) =>{
-     
+  
     let itemToAdd = store[itemType].find(el =>el.id === item.id)
     itemToAdd.count++
     itemToAdd.total = +(itemToAdd.count * itemToAdd.price).toFixed(2)
-    
+    itemToAdd["type"] = itemType
+  
     if(itemToAdd.inCart === false){
          itemToAdd.inCart = true
-       
+         
             cart.push(itemToAdd)
     }
 
     
     dispatch({type:"CART",payload:[...cart]})
+   
     history.push('/added')
  
  }
 
-export const removeCart =(itemName) =>{
-    console.log('call')
-    const newCart= cart.filter(el => el.title !== itemName)
-    return {type:"CART",payload:[...newCart]}
+export const removeCart =(itemName,type) =>{
+    
+    cart = cart.filter(el => el.title !== itemName)
+    let itemToRemove = store[type].find(el => el.title === itemName)
+    console.log(itemToRemove)
+    
+        itemToRemove.count = 0
+         itemToRemove.total = +(itemToRemove.count * itemToRemove.price).toFixed(2)
+        itemToRemove.inCart = false
+    
+
+    return {type:"CART",payload:[...cart]}
 }
